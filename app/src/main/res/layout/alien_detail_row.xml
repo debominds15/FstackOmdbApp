@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.demo.fstack.fstackapp.util.views.TextViewBold
+        android:id="@+id/tv_alien_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="Title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_20" />
+
+    <com.demo.fstack.fstackapp.util.views.TextViewRegular
+        android:id="@+id/tv_alien_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_alien_title"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:text="Details"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_15" />
+
+    <View
+        android:id="@+id/view_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_alien_desc"
+        android:background="@color/colorTransparentBlueShade" />
+</RelativeLayout>

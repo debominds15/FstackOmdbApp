@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_20"
+    android:background="@drawable/border_oval_white_bg">
+
+    <ImageView
+        android:id="@+id/iv_alien"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:src="@drawable/placeholder_image" />
+
+    <com.demo.fstack.fstackapp.util.views.TextViewBold
+        android:id="@+id/tv_alien_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_alien"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_toEndOf="@+id/iv_alien"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_20" />
+
+    <com.demo.fstack.fstackapp.util.views.TextViewRegular
+        android:id="@+id/tv_alien_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_alien_name"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_toEndOf="@+id/iv_alien"
+        android:textColor="@android:color/darker_gray" />
+</RelativeLayout>
